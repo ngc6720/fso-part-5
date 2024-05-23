@@ -1,0 +1,33 @@
+{
+  "name": "bloglist",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "start": "NODE_ENV=production node index.js",
+    "start:test": "NODE_ENV=test node index.js",
+    "dev": "NODE_ENV=development nodemon index.js",
+    "lint": "eslint .",
+    "test": "NODE_ENV=test node --test --test-concurrency=1",
+    "test-api-blogs": "npm test -- tests/blogs_api.test.js",
+    "test-api-users": "npm test -- tests/users_api.test.js",
+    "test-api-login": "npm test -- tests/login_api.test.js",
+    "test-api-populating": "npm test -- tests/populating.test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.0.0"
+  }
+}

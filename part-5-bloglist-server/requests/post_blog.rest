@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im91aW91aSIsImlkIjoiNjY0YmM4MzBhNWMwNjVjZjA5MTgwZjcxIiwiaWF0IjoxNzE2MjQzNzE2LCJleHAiOjE3MTYyNDczMTZ9.TvZEbkM5q7C1wYMYFl5sbgv8-hu0yWMjjht1ZA0X4gI
+
+
+{
+  "title": "Pasta alla Gricia",
+  "author": "Riri",
+  "url": "https://www.recipesfromitaly.com/pasta-alla-gricia/",
+  "likes": 0
+}

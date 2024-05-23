@@ -1,0 +1,65 @@
+.notificationContainer {
+  display: flex;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0.5rem;
+  justify-content: center;
+  align-items: start;
+  pointer-events: none;
+  user-select: none;
+}
+.notification {
+  font-size: 1.2rem;
+  padding: 1rem;
+  display: flex;
+  animation: fadeIn 0.2s ease;
+  width: fit-content;
+  pointer-events: none;
+}
+
+.notification.error {
+  color: rgb(132, 21, 43);
+  background-color: rgb(255, 243, 246);
+  border: 1px solid rgb(255, 189, 203);
+}
+.notification.success {
+  color: rgb(29, 88, 69);
+  background-color: rgb(235, 254, 248);
+  border: 1px solid rgb(188, 254, 233);
+}
+@keyframes fadeIn {
+  0% {
+    transform: translateY(100);
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: min-content;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+button {
+  width: fit-content;
+}
+
+.blog .expandable-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+ul {
+  padding: 0;
+}
